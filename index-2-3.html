@@ -207,6 +207,8 @@
                     $('#example46').multiselect({
                         checkboxName: 'multiselect-checkbox'
                     });
+                    $('#example48').multiselect();
+                    $('#example49').multiselect();
 			    });
 			</script>
 			<p>
@@ -228,6 +230,32 @@
 						Normal select. The plugin will do single selection using radio buttons rather than multiple selection using checkboxes.
 					</td>
 				</tr>
+                                <tr>
+                                        <td>
+                                                <div class="form-inline">
+
+                                                        <select id="example48">
+                                                                <option value="cheese" selected>Cheese</option>
+                                                                <option value="tomatoes">Tomatoes</option>
+                                                                <option value="mozarella">Mozzarella</option>
+                                                                <option value="mushrooms">Mushrooms</option>
+                                                                <option value="pepperoni">Pepperoni</option>
+                                                                <option value="onions">Onions</option>
+                                                        </select>
+                                                        <select id="example49" multiple="multiple">
+                                                                <option value="cheese" selected>Cheese</option>
+                                                                <option value="tomatoes">Tomatoes</option>
+                                                                <option value="mozarella">Mozzarella</option>
+                                                                <option value="mushrooms">Mushrooms</option>
+                                                                <option value="pepperoni">Pepperoni</option>
+                                                                <option value="onions">Onions</option>
+                                                        </select>
+                                                </div>
+                                        </td>
+                                        <td>
+                                                Normal select and multiselect. But using the plugin inside a <code>form-inline</code> css class. See how inline form works at <a href="http://getbootstrap.com/2.3.2/base-css.html#forms">Bootstrap - Forms</a>.
+                                        </td>
+                                </tr>
 			    <tr>
 			        <td>
 			            <select id="example2" multiple="multiple">
@@ -578,7 +606,7 @@
 					<td>
                         Use the <code>checkboxName</code> to adapt the <code>name</code> attribute of the used checkboxes.
 					</td>
-				</tr>
+				</tr>                                
 			</table>
 
             <div class="page-header">
